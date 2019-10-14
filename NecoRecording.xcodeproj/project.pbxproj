@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB0BB915235532C900257786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB914235532C900257786 /* AppDelegate.swift */; };
+		CB0BB917235532C900257786 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB916235532C900257786 /* SceneDelegate.swift */; };
+		CB0BB919235532C900257786 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB918235532C900257786 /* ViewController.swift */; };
+		CB0BB91C235532C900257786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0BB91A235532C900257786 /* Main.storyboard */; };
+		CB0BB91F235532C900257786 /* NecoRecording.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB91D235532C900257786 /* NecoRecording.xcdatamodeld */; };
+		CB0BB921235532CC00257786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB0BB920235532CC00257786 /* Assets.xcassets */; };
+		CB0BB924235532CC00257786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0BB922235532CC00257786 /* LaunchScreen.storyboard */; };
+		CB0BB92F235532CC00257786 /* NecoRecordingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB92E235532CC00257786 /* NecoRecordingTests.swift */; };
+		CB0BB93A235532CD00257786 /* NecoRecordingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB939235532CD00257786 /* NecoRecordingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB0BB92B235532CC00257786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB0BB909235532C900257786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB0BB910235532C900257786;
+			remoteInfo = NecoRecording;
+		};
+		CB0BB936235532CD00257786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB0BB909235532C900257786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB0BB910235532C900257786;
+			remoteInfo = NecoRecording;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB0BB911235532C900257786 /* NecoRecording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NecoRecording.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0BB914235532C900257786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB0BB916235532C900257786 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CB0BB918235532C900257786 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB0BB91B235532C900257786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB0BB91E235532C900257786 /* NecoRecording.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NecoRecording.xcdatamodel; sourceTree = "<group>"; };
+		CB0BB920235532CC00257786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB0BB923235532CC00257786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB0BB925235532CC00257786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB0BB92A235532CC00257786 /* NecoRecordingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NecoRecordingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0BB92E235532CC00257786 /* NecoRecordingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NecoRecordingTests.swift; sourceTree = "<group>"; };
+		CB0BB930235532CC00257786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB0BB935235532CD00257786 /* NecoRecordingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NecoRecordingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0BB939235532CD00257786 /* NecoRecordingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NecoRecordingUITests.swift; sourceTree = "<group>"; };
+		CB0BB93B235532CD00257786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB0BB90E235532C900257786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0BB927235532CC00257786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0BB932235532CD00257786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB0BB908235532C900257786 = {
+			isa = PBXGroup;
+			children = (
+				CB0BB913235532C900257786 /* NecoRecording */,
+				CB0BB92D235532CC00257786 /* NecoRecordingTests */,
+				CB0BB938235532CD00257786 /* NecoRecordingUITests */,
+				CB0BB912235532C900257786 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB0BB912235532C900257786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BB911235532C900257786 /* NecoRecording.app */,
+				CB0BB92A235532CC00257786 /* NecoRecordingTests.xctest */,
+				CB0BB935235532CD00257786 /* NecoRecordingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB0BB913235532C900257786 /* NecoRecording */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BB914235532C900257786 /* AppDelegate.swift */,
+				CB0BB916235532C900257786 /* SceneDelegate.swift */,
+				CB0BB918235532C900257786 /* ViewController.swift */,
+				CB0BB91A235532C900257786 /* Main.storyboard */,
+				CB0BB920235532CC00257786 /* Assets.xcassets */,
+				CB0BB922235532CC00257786 /* LaunchScreen.storyboard */,
+				CB0BB925235532CC00257786 /* Info.plist */,
+				CB0BB91D235532C900257786 /* NecoRecording.xcdatamodeld */,
+			);
+			path = NecoRecording;
+			sourceTree = "<group>";
+		};
+		CB0BB92D235532CC00257786 /* NecoRecordingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BB92E235532CC00257786 /* NecoRecordingTests.swift */,
+				CB0BB930235532CC00257786 /* Info.plist */,
+			);
+			path = NecoRecordingTests;
+			sourceTree = "<group>";
+		};
+		CB0BB938235532CD00257786 /* NecoRecordingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BB939235532CD00257786 /* NecoRecordingUITests.swift */,
+				CB0BB93B235532CD00257786 /* Info.plist */,
+			);
+			path = NecoRecordingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB0BB910235532C900257786 /* NecoRecording */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB0BB93E235532CD00257786 /* Build configuration list for PBXNativeTarget "NecoRecording" */;
+			buildPhases = (
+				CB0BB90D235532C900257786 /* Sources */,
+				CB0BB90E235532C900257786 /* Frameworks */,
+				CB0BB90F235532C900257786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NecoRecording;
+			productName = NecoRecording;
+			productReference = CB0BB911235532C900257786 /* NecoRecording.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB0BB929235532CC00257786 /* NecoRecordingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB0BB941235532CD00257786 /* Build configuration list for PBXNativeTarget "NecoRecordingTests" */;
+			buildPhases = (
+				CB0BB926235532CC00257786 /* Sources */,
+				CB0BB927235532CC00257786 /* Frameworks */,
+				CB0BB928235532CC00257786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB0BB92C235532CC00257786 /* PBXTargetDependency */,
+			);
+			name = NecoRecordingTests;
+			productName = NecoRecordingTests;
+			productReference = CB0BB92A235532CC00257786 /* NecoRecordingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB0BB934235532CD00257786 /* NecoRecordingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB0BB944235532CD00257786 /* Build configuration list for PBXNativeTarget "NecoRecordingUITests" */;
+			buildPhases = (
+				CB0BB931235532CD00257786 /* Sources */,
+				CB0BB932235532CD00257786 /* Frameworks */,
+				CB0BB933235532CD00257786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB0BB937235532CD00257786 /* PBXTargetDependency */,
+			);
+			name = NecoRecordingUITests;
+			productName = NecoRecordingUITests;
+			productReference = CB0BB935235532CD00257786 /* NecoRecordingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB0BB909235532C900257786 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Fernando Martín Ortiz";
+				TargetAttributes = {
+					CB0BB910235532C900257786 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					CB0BB929235532CC00257786 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = CB0BB910235532C900257786;
+					};
+					CB0BB934235532CD00257786 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = CB0BB910235532C900257786;
+					};
+				};
+			};
+			buildConfigurationList = CB0BB90C235532C900257786 /* Build configuration list for PBXProject "NecoRecording" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB0BB908235532C900257786;
+			productRefGroup = CB0BB912235532C900257786 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB0BB910235532C900257786 /* NecoRecording */,
+				CB0BB929235532CC00257786 /* NecoRecordingTests */,
+				CB0BB934235532CD00257786 /* NecoRecordingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB0BB90F235532C900257786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0BB924235532CC00257786 /* LaunchScreen.storyboard in Resources */,
+				CB0BB921235532CC00257786 /* Assets.xcassets in Resources */,
+				CB0BB91C235532C900257786 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0BB928235532CC00257786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0BB933235532CD00257786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB0BB90D235532C900257786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0BB91F235532C900257786 /* NecoRecording.xcdatamodeld in Sources */,
+				CB0BB919235532C900257786 /* ViewController.swift in Sources */,
+				CB0BB915235532C900257786 /* AppDelegate.swift in Sources */,
+				CB0BB917235532C900257786 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0BB926235532CC00257786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0BB92F235532CC00257786 /* NecoRecordingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0BB931235532CD00257786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0BB93A235532CD00257786 /* NecoRecordingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB0BB92C235532CC00257786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB0BB910235532C900257786 /* NecoRecording */;
+			targetProxy = CB0BB92B235532CC00257786 /* PBXContainerItemProxy */;
+		};
+		CB0BB937235532CD00257786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB0BB910235532C900257786 /* NecoRecording */;
+			targetProxy = CB0BB936235532CD00257786 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB0BB91A235532C900257786 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB0BB91B235532C900257786 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB0BB922235532CC00257786 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB0BB923235532CC00257786 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB0BB93C235532CD00257786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB0BB93D235532CD00257786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB0BB93F235532CD00257786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EUARY92ECY;
+				INFOPLIST_FILE = NecoRecording/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinixsoft.NecoRecording;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB0BB940235532CD00257786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EUARY92ECY;
+				INFOPLIST_FILE = NecoRecording/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinixsoft.NecoRecording;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB0BB942235532CD00257786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EUARY92ECY;
+				INFOPLIST_FILE = NecoRecordingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinixsoft.NecoRecordingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NecoRecording.app/NecoRecording";
+			};
+			name = Debug;
+		};
+		CB0BB943235532CD00257786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EUARY92ECY;
+				INFOPLIST_FILE = NecoRecordingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinixsoft.NecoRecordingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NecoRecording.app/NecoRecording";
+			};
+			name = Release;
+		};
+		CB0BB945235532CD00257786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EUARY92ECY;
+				INFOPLIST_FILE = NecoRecordingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinixsoft.NecoRecordingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NecoRecording;
+			};
+			name = Debug;
+		};
+		CB0BB946235532CD00257786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EUARY92ECY;
+				INFOPLIST_FILE = NecoRecordingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinixsoft.NecoRecordingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NecoRecording;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB0BB90C235532C900257786 /* Build configuration list for PBXProject "NecoRecording" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB0BB93C235532CD00257786 /* Debug */,
+				CB0BB93D235532CD00257786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB0BB93E235532CD00257786 /* Build configuration list for PBXNativeTarget "NecoRecording" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB0BB93F235532CD00257786 /* Debug */,
+				CB0BB940235532CD00257786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB0BB941235532CD00257786 /* Build configuration list for PBXNativeTarget "NecoRecordingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB0BB942235532CD00257786 /* Debug */,
+				CB0BB943235532CD00257786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB0BB944235532CD00257786 /* Build configuration list for PBXNativeTarget "NecoRecordingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB0BB945235532CD00257786 /* Debug */,
+				CB0BB946235532CD00257786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB0BB91D235532C900257786 /* NecoRecording.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB0BB91E235532C900257786 /* NecoRecording.xcdatamodel */,
+			);
+			currentVersion = CB0BB91E235532C900257786 /* NecoRecording.xcdatamodel */;
+			path = NecoRecording.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CB0BB909235532C900257786 /* Project object */;
+}
