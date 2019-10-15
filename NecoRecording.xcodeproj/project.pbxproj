@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352773FC0BE48D6B0C94997B /* Pods_NecoRecordingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FCB8B52F3BF7D133FB337D /* Pods_NecoRecordingTests.framework */; };
+		3B262A445E6AD494A42FB11F /* Pods_NecoRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A8D1D6480691CCA72609C /* Pods_NecoRecording.framework */; };
 		CB0BB915235532C900257786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB914235532C900257786 /* AppDelegate.swift */; };
 		CB0BB917235532C900257786 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB916235532C900257786 /* SceneDelegate.swift */; };
 		CB0BB919235532C900257786 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB918235532C900257786 /* BaseViewController.swift */; };
@@ -24,6 +26,7 @@
 		CB43D60723555E0600107DB8 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB43D60523555E0600107DB8 /* InitialViewController.xib */; };
 		CB43D60A2355600700107DB8 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43D6092355600700107DB8 /* NavigationHelper.swift */; };
 		CB43D60C235563A100107DB8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43D60B235563A100107DB8 /* BaseNavigationController.swift */; };
+		E1CAFB4BD839D11CB1C75959 /* Pods_NecoRecording_NecoRecordingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0627943F04C47C3514033E21 /* Pods_NecoRecording_NecoRecordingUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0627943F04C47C3514033E21 /* Pods_NecoRecording_NecoRecordingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NecoRecording_NecoRecordingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0871DB88B71A2F2FDEF7F622 /* Pods-NecoRecording.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NecoRecording.release.xcconfig"; path = "Target Support Files/Pods-NecoRecording/Pods-NecoRecording.release.xcconfig"; sourceTree = "<group>"; };
+		2B1A8D1D6480691CCA72609C /* Pods_NecoRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NecoRecording.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FFEC1F7748DD91B108D8F4A /* Pods-NecoRecordingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NecoRecordingTests.release.xcconfig"; path = "Target Support Files/Pods-NecoRecordingTests/Pods-NecoRecordingTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDEB68721146652602116302 /* Pods-NecoRecordingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NecoRecordingTests.debug.xcconfig"; path = "Target Support Files/Pods-NecoRecordingTests/Pods-NecoRecordingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB0BB911235532C900257786 /* NecoRecording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NecoRecording.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0BB914235532C900257786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB0BB916235532C900257786 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +75,10 @@
 		CB43D60523555E0600107DB8 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
 		CB43D6092355600700107DB8 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		CB43D60B235563A100107DB8 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		D8FCB8B52F3BF7D133FB337D /* Pods_NecoRecordingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NecoRecordingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E868F6AFBB6C17741223543F /* Pods-NecoRecording.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NecoRecording.debug.xcconfig"; path = "Target Support Files/Pods-NecoRecording/Pods-NecoRecording.debug.xcconfig"; sourceTree = "<group>"; };
+		F0328B3D1E58646E6591C05F /* Pods-NecoRecording-NecoRecordingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NecoRecording-NecoRecordingUITests.debug.xcconfig"; path = "Target Support Files/Pods-NecoRecording-NecoRecordingUITests/Pods-NecoRecording-NecoRecordingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3F06B348E9D69B7EE412050 /* Pods-NecoRecording-NecoRecordingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NecoRecording-NecoRecordingUITests.release.xcconfig"; path = "Target Support Files/Pods-NecoRecording-NecoRecordingUITests/Pods-NecoRecording-NecoRecordingUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B262A445E6AD494A42FB11F /* Pods_NecoRecording.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				352773FC0BE48D6B0C94997B /* Pods_NecoRecordingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +102,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CAFB4BD839D11CB1C75959 /* Pods_NecoRecording_NecoRecordingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AA647D476CE2B08351A5FDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E868F6AFBB6C17741223543F /* Pods-NecoRecording.debug.xcconfig */,
+				0871DB88B71A2F2FDEF7F622 /* Pods-NecoRecording.release.xcconfig */,
+				F0328B3D1E58646E6591C05F /* Pods-NecoRecording-NecoRecordingUITests.debug.xcconfig */,
+				F3F06B348E9D69B7EE412050 /* Pods-NecoRecording-NecoRecordingUITests.release.xcconfig */,
+				BDEB68721146652602116302 /* Pods-NecoRecordingTests.debug.xcconfig */,
+				4FFEC1F7748DD91B108D8F4A /* Pods-NecoRecordingTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6311099D697CE6A86DE2FB1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B1A8D1D6480691CCA72609C /* Pods_NecoRecording.framework */,
+				0627943F04C47C3514033E21 /* Pods_NecoRecording_NecoRecordingUITests.framework */,
+				D8FCB8B52F3BF7D133FB337D /* Pods_NecoRecordingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB0BB908235532C900257786 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +140,8 @@
 				CB0BB92D235532CC00257786 /* NecoRecordingTests */,
 				CB0BB938235532CD00257786 /* NecoRecordingUITests */,
 				CB0BB912235532C900257786 /* Products */,
+				2AA647D476CE2B08351A5FDC /* Pods */,
+				6311099D697CE6A86DE2FB1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,6 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB0BB93E235532CD00257786 /* Build configuration list for PBXNativeTarget "NecoRecording" */;
 			buildPhases = (
+				320D6208AEC3FC1F3AB0B373 /* [CP] Check Pods Manifest.lock */,
 				CB0BB90D235532C900257786 /* Sources */,
 				CB0BB90E235532C900257786 /* Frameworks */,
 				CB0BB90F235532C900257786 /* Resources */,
@@ -243,6 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB0BB941235532CD00257786 /* Build configuration list for PBXNativeTarget "NecoRecordingTests" */;
 			buildPhases = (
+				7A78281CE1697C4F99E146C7 /* [CP] Check Pods Manifest.lock */,
 				CB0BB926235532CC00257786 /* Sources */,
 				CB0BB927235532CC00257786 /* Frameworks */,
 				CB0BB928235532CC00257786 /* Resources */,
@@ -261,6 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB0BB944235532CD00257786 /* Build configuration list for PBXNativeTarget "NecoRecordingUITests" */;
 			buildPhases = (
+				FB98B3E86C0C73F8B25815CF /* [CP] Check Pods Manifest.lock */,
 				CB0BB931235532CD00257786 /* Sources */,
 				CB0BB932235532CD00257786 /* Frameworks */,
 				CB0BB933235532CD00257786 /* Resources */,
@@ -345,6 +389,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		320D6208AEC3FC1F3AB0B373 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NecoRecording-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A78281CE1697C4F99E146C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NecoRecordingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB98B3E86C0C73F8B25815CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NecoRecording-NecoRecordingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB0BB90D235532C900257786 /* Sources */ = {
@@ -524,6 +637,7 @@
 		};
 		CB0BB93F235532CD00257786 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E868F6AFBB6C17741223543F /* Pods-NecoRecording.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +656,7 @@
 		};
 		CB0BB940235532CD00257786 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0871DB88B71A2F2FDEF7F622 /* Pods-NecoRecording.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,6 +675,7 @@
 		};
 		CB0BB942235532CD00257786 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDEB68721146652602116302 /* Pods-NecoRecordingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -582,6 +698,7 @@
 		};
 		CB0BB943235532CD00257786 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FFEC1F7748DD91B108D8F4A /* Pods-NecoRecordingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -604,6 +721,7 @@
 		};
 		CB0BB945235532CD00257786 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0328B3D1E58646E6591C05F /* Pods-NecoRecording-NecoRecordingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -624,6 +742,7 @@
 		};
 		CB0BB946235532CD00257786 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F06B348E9D69B7EE412050 /* Pods-NecoRecording-NecoRecordingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

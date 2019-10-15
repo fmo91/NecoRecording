@@ -1,0 +1,6 @@
+framework module Pods_NecoRecording_NecoRecordingUITests {
+  umbrella header "Pods-NecoRecording-NecoRecordingUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
