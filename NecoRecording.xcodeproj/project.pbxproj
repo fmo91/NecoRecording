@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		CB0BB915235532C900257786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB914235532C900257786 /* AppDelegate.swift */; };
 		CB0BB917235532C900257786 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB916235532C900257786 /* SceneDelegate.swift */; };
-		CB0BB919235532C900257786 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB918235532C900257786 /* ViewController.swift */; };
-		CB0BB91C235532C900257786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0BB91A235532C900257786 /* Main.storyboard */; };
+		CB0BB919235532C900257786 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB918235532C900257786 /* BaseViewController.swift */; };
 		CB0BB91F235532C900257786 /* NecoRecording.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB91D235532C900257786 /* NecoRecording.xcdatamodeld */; };
 		CB0BB921235532CC00257786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB0BB920235532CC00257786 /* Assets.xcassets */; };
 		CB0BB924235532CC00257786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0BB922235532CC00257786 /* LaunchScreen.storyboard */; };
 		CB0BB92F235532CC00257786 /* NecoRecordingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB92E235532CC00257786 /* NecoRecordingTests.swift */; };
 		CB0BB93A235532CD00257786 /* NecoRecordingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB939235532CD00257786 /* NecoRecordingUITests.swift */; };
+		CB43D5F923555CD900107DB8 /* RecordingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43D5F723555CD900107DB8 /* RecordingsListViewController.swift */; };
+		CB43D5FA23555CD900107DB8 /* RecordingsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB43D5F823555CD900107DB8 /* RecordingsListViewController.xib */; };
+		CB43D5FC23555CE800107DB8 /* RecordingsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43D5FB23555CE800107DB8 /* RecordingsListViewModel.swift */; };
+		CB43D5FE23555CFE00107DB8 /* RecordingsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43D5FD23555CFE00107DB8 /* RecordingsListViewModelTests.swift */; };
+		CB43D60023555D0900107DB8 /* RecordingsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43D5FF23555D0900107DB8 /* RecordingsListViewControllerTests.swift */; };
+		CB43D60623555E0600107DB8 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43D60423555E0600107DB8 /* InitialViewController.swift */; };
+		CB43D60723555E0600107DB8 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB43D60523555E0600107DB8 /* InitialViewController.xib */; };
+		CB43D60A2355600700107DB8 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43D6092355600700107DB8 /* NavigationHelper.swift */; };
+		CB43D60C235563A100107DB8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43D60B235563A100107DB8 /* BaseNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +47,7 @@
 		CB0BB911235532C900257786 /* NecoRecording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NecoRecording.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0BB914235532C900257786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB0BB916235532C900257786 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB0BB918235532C900257786 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB0BB91B235532C900257786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB0BB918235532C900257786 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CB0BB91E235532C900257786 /* NecoRecording.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NecoRecording.xcdatamodel; sourceTree = "<group>"; };
 		CB0BB920235532CC00257786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB0BB923235532CC00257786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,15 @@
 		CB0BB935235532CD00257786 /* NecoRecordingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NecoRecordingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0BB939235532CD00257786 /* NecoRecordingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NecoRecordingUITests.swift; sourceTree = "<group>"; };
 		CB0BB93B235532CD00257786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB43D5F723555CD900107DB8 /* RecordingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsListViewController.swift; sourceTree = "<group>"; };
+		CB43D5F823555CD900107DB8 /* RecordingsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordingsListViewController.xib; sourceTree = "<group>"; };
+		CB43D5FB23555CE800107DB8 /* RecordingsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsListViewModel.swift; sourceTree = "<group>"; };
+		CB43D5FD23555CFE00107DB8 /* RecordingsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsListViewModelTests.swift; sourceTree = "<group>"; };
+		CB43D5FF23555D0900107DB8 /* RecordingsListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsListViewControllerTests.swift; sourceTree = "<group>"; };
+		CB43D60423555E0600107DB8 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		CB43D60523555E0600107DB8 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		CB43D6092355600700107DB8 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
+		CB43D60B235563A100107DB8 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +117,11 @@
 		CB0BB913235532C900257786 /* NecoRecording */ = {
 			isa = PBXGroup;
 			children = (
+				CB43D60823555FFC00107DB8 /* Utils */,
+				CB0BB94A235533B000257786 /* Resources */,
+				CB0BB948235533A200257786 /* Model */,
+				CB0BB9472355339D00257786 /* Application */,
 				CB0BB914235532C900257786 /* AppDelegate.swift */,
-				CB0BB916235532C900257786 /* SceneDelegate.swift */,
-				CB0BB918235532C900257786 /* ViewController.swift */,
-				CB0BB91A235532C900257786 /* Main.storyboard */,
-				CB0BB920235532CC00257786 /* Assets.xcassets */,
-				CB0BB922235532CC00257786 /* LaunchScreen.storyboard */,
-				CB0BB925235532CC00257786 /* Info.plist */,
-				CB0BB91D235532C900257786 /* NecoRecording.xcdatamodeld */,
 			);
 			path = NecoRecording;
 			sourceTree = "<group>";
@@ -129,6 +142,81 @@
 				CB0BB93B235532CD00257786 /* Info.plist */,
 			);
 			path = NecoRecordingUITests;
+			sourceTree = "<group>";
+		};
+		CB0BB9472355339D00257786 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BB949235533AA00257786 /* Base */,
+				CB43D60323555DF300107DB8 /* Initial */,
+				CB43D5F523555CAE00107DB8 /* RecordingsList */,
+				CB43D5F623555CB600107DB8 /* Create Recording */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CB0BB948235533A200257786 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB0BB949235533AA00257786 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BB918235532C900257786 /* BaseViewController.swift */,
+				CB43D60B235563A100107DB8 /* BaseNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CB0BB94A235533B000257786 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BB920235532CC00257786 /* Assets.xcassets */,
+				CB0BB925235532CC00257786 /* Info.plist */,
+				CB0BB91D235532C900257786 /* NecoRecording.xcdatamodeld */,
+				CB0BB916235532C900257786 /* SceneDelegate.swift */,
+				CB0BB922235532CC00257786 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB43D5F523555CAE00107DB8 /* RecordingsList */ = {
+			isa = PBXGroup;
+			children = (
+				CB43D5F723555CD900107DB8 /* RecordingsListViewController.swift */,
+				CB43D5FF23555D0900107DB8 /* RecordingsListViewControllerTests.swift */,
+				CB43D5F823555CD900107DB8 /* RecordingsListViewController.xib */,
+				CB43D5FB23555CE800107DB8 /* RecordingsListViewModel.swift */,
+				CB43D5FD23555CFE00107DB8 /* RecordingsListViewModelTests.swift */,
+			);
+			path = RecordingsList;
+			sourceTree = "<group>";
+		};
+		CB43D5F623555CB600107DB8 /* Create Recording */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Create Recording";
+			sourceTree = "<group>";
+		};
+		CB43D60323555DF300107DB8 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				CB43D60423555E0600107DB8 /* InitialViewController.swift */,
+				CB43D60523555E0600107DB8 /* InitialViewController.xib */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		CB43D60823555FFC00107DB8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CB43D6092355600700107DB8 /* NavigationHelper.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB0BB924235532CC00257786 /* LaunchScreen.storyboard in Resources */,
+				CB43D5FA23555CD900107DB8 /* RecordingsListViewController.xib in Resources */,
 				CB0BB921235532CC00257786 /* Assets.xcassets in Resources */,
-				CB0BB91C235532C900257786 /* Main.storyboard in Resources */,
+				CB43D60723555E0600107DB8 /* InitialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +351,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB43D5F923555CD900107DB8 /* RecordingsListViewController.swift in Sources */,
+				CB43D60A2355600700107DB8 /* NavigationHelper.swift in Sources */,
+				CB43D60623555E0600107DB8 /* InitialViewController.swift in Sources */,
 				CB0BB91F235532C900257786 /* NecoRecording.xcdatamodeld in Sources */,
-				CB0BB919235532C900257786 /* ViewController.swift in Sources */,
+				CB0BB919235532C900257786 /* BaseViewController.swift in Sources */,
+				CB43D60C235563A100107DB8 /* BaseNavigationController.swift in Sources */,
 				CB0BB915235532C900257786 /* AppDelegate.swift in Sources */,
+				CB43D5FC23555CE800107DB8 /* RecordingsListViewModel.swift in Sources */,
 				CB0BB917235532C900257786 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +367,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB43D5FE23555CFE00107DB8 /* RecordingsListViewModelTests.swift in Sources */,
+				CB43D60023555D0900107DB8 /* RecordingsListViewControllerTests.swift in Sources */,
 				CB0BB92F235532CC00257786 /* NecoRecordingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,14 +397,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CB0BB91A235532C900257786 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB0BB91B235532C900257786 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB0BB922235532CC00257786 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -440,7 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EUARY92ECY;
-				INFOPLIST_FILE = NecoRecording/Info.plist;
+				INFOPLIST_FILE = NecoRecording/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +546,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EUARY92ECY;
-				INFOPLIST_FILE = NecoRecording/Info.plist;
+				INFOPLIST_FILE = NecoRecording/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
