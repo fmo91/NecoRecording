@@ -8,23 +8,26 @@
 
 import UIKit
 
-final class RecordingsListViewController: UIViewController {
+final class RecordingsListViewController: BaseViewController {
 
+    // MARK: - Attributes -
+    private let viewModel: RecordingsListViewModelType
+    
+    // MARK: - Life Cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .red
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - Init -
+    init(viewModel: RecordingsListViewModelType) {
+        self.viewModel = viewModel
+        super.init()
     }
-    */
-
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 }

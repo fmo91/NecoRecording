@@ -6,10 +6,14 @@ target 'NecoRecording' do
   use_frameworks!
 
   # Pods for NecoRecording
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
 
   target 'NecoRecordingTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxBlocking', '~> 5'
+    pod 'RxTest', '~> 5'
   end
 
   target 'NecoRecordingUITests' do

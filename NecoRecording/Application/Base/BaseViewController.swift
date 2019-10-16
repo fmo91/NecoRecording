@@ -8,11 +8,22 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+open class BaseViewController: UIViewController {
 
-    override func viewDidLoad() {
+    // MARK: - Life Cycle -
+    override open func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    // MARK: - Init -
+    init(nibName: String? = nil) {
+        let name = String(describing: type(of: self))
+        super.init(nibName: nibName ?? name, bundle: nil)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 }
 
