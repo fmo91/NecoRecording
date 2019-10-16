@@ -21,7 +21,7 @@ final class RecordingsListViewController: BaseViewController {
     }
     
     // MARK: - Init -
-    init(viewModel: RecordingsListViewModelType) {
+    init(viewModel: RecordingsListViewModelType = RecordingsListViewModel()) {
         self.viewModel = viewModel
         super.init()
     }

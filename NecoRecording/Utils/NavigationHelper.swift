@@ -18,9 +18,8 @@ internal enum NavigationHelper {
     ///
     /// - Parameter viewController: The destination view controller for the transition
     /// - Parameter animated. Whether the transition is animated or not.
-    static internal func setRoot(viewController: UIViewController, animated: Bool) {
-        guard let applicationDelegate: UIApplicationDelegate = UIApplication.shared.delegate else { return }
-        guard let aWindow: UIWindow? = applicationDelegate.window, let window: UIWindow = aWindow else { return }
+    static internal func setRoot(from originViewController: UIViewController, to viewController: UIViewController, animated: Bool) {
+        guard let window: UIWindow = (originViewController.scene?.delegate as? SceneDelegate)?.window else { return }
         
         if (animated == false || window.rootViewController == nil) {
             window.rootViewController = viewController
@@ -36,5 +35,44 @@ internal enum NavigationHelper {
                 snapshot.removeFromSuperview()
             })
         }
+    }
+}
+
+extension UIResponder {
+    @objc var scene: UIScene? {
+        return nil
+    }
+}
+
+extension UIScene {
+    @objc override var scene: UIScene? {
+        return self
+    }
+}
+
+extension UIView {
+    @objc override var scene: UIScene? {
+        if let window = self.window {
+            return window.windowScene
+        } else {
+            return self.next?.scene
+        }
+    }
+}
+
+extension UIViewController {
+    @objc override var scene: UIScene? {
+        // Try walking the responder chain
+        var res = self.next?.scene
+        if (res == nil) {
+            // That didn't work. Try asking my parent view controller
+            res = self.parent?.scene
+        }
+        if (res == nil) {
+            // That didn't work. Try asking my presenting view controller
+            res = self.presentingViewController?.scene
+        }
+
+        return res
     }
 }

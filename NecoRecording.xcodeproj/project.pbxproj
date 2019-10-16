@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -119,7 +119,6 @@
 				BDEB68721146652602116302 /* Pods-NecoRecordingTests.debug.xcconfig */,
 				4FFEC1F7748DD91B108D8F4A /* Pods-NecoRecordingTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

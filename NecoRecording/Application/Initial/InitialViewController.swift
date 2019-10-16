@@ -12,8 +12,9 @@ import UIKit
 final class InitialViewController: BaseViewController {
 
     // MARK: - Life Cycle -
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         transitionToHome()
     }
     
@@ -21,7 +22,7 @@ final class InitialViewController: BaseViewController {
     private func transitionToHome() {
         let rootViewController = RecordingsListViewController()
         let navigationController = BaseNavigationController(rootViewController: rootViewController)
-        NavigationHelper.setRoot(viewController: navigationController, animated: true)
+        NavigationHelper.setRoot(from: self, to: navigationController, animated: true)
     }
 
 }
