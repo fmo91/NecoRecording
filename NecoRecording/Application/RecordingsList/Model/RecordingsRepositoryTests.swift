@@ -1,20 +1,17 @@
 //
-//  RecordingsListViewModelTests.swift
+//  RecordingsRepositoryTests.swift
 //  NecoRecordingTests
 //
-//  Created by Fernando Martín Ortiz on 14/10/2019.
+//  Created by Fernando Martín Ortiz on 16/10/2019.
 //  Copyright © 2019 Fernando Martín Ortiz. All rights reserved.
 //
 
 import XCTest
-import NecoRecording
 
-final class RecordingsListViewModelTests: XCTestCase {
+class RecordingsRepositoryTests: XCTestCase {
 
-    private var sut: RecordingsListViewModel?
-    
     override func setUp() {
-        
+        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDown() {

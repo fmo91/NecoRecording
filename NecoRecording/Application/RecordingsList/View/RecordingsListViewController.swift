@@ -9,6 +9,9 @@
 import UIKit
 
 final class RecordingsListViewController: BaseViewController {
+    
+    // MARK: - Views -
+    @IBOutlet private weak var tableView: UITableView!
 
     // MARK: - Attributes -
     private let viewModel: RecordingsListViewModelType
