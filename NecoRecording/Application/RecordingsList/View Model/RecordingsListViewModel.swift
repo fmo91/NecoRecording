@@ -14,12 +14,13 @@ protocol RecordingsListViewModelType {
     var isLoadingItems: Driver<Bool> { get }
     
     func reload()
+    func createRecordingViewModel(for item: RecordingItemViewModel) -> PlayRecordingViewModelType
 }
 
 final class RecordingsListViewModel: RecordingsListViewModelType {
     // MARK: - Internal State -
     private let repository: RecordingsRepositoryType
-    private let itemsRelay = BehaviorRelay<[RecordingItemViewModel]>(value: [])
+    private let recordings = BehaviorRelay<[Recording]>(value: [])
     private let isLoadingItemsRelay = BehaviorRelay<Bool>(value: false)
     private let errorMessageRelay = BehaviorRelay<String?>(value: nil)
     private let disposeBag = DisposeBag()
@@ -42,7 +43,8 @@ final class RecordingsListViewModel: RecordingsListViewModelType {
         self.isLoadingItemsRelay.accept(true)
         repository.getRecordings()
             .do(
-                onSuccess: { [weak self] (_) in
+                onSuccess: { [weak self] (recordings: [Recording]) in
+                    self?.recordings.accept(recordings)
                     self?.isLoadingItemsRelay.accept(false)
                 },
                 onError: { [weak self] (_) in
@@ -63,9 +65,22 @@ final class RecordingsListViewModel: RecordingsListViewModelType {
             .disposed(by: disposeBag)
     }
     
+    func createRecordingViewModel(for item: RecordingItemViewModel) -> PlayRecordingViewModelType {
+        let recording = self.recordings.value.recording(for: item)!
+        return PlayRecordingViewModel(recording: recording)
+    }
+    
     // MARK: - Utils -
     private func message(forFetchingError fetchingError: Error) -> String {
         return String.Constant.defaultError.value
+    }
+}
+
+private extension Array where Element == Recording {
+    func recording(for item: RecordingItemViewModel) -> Recording? {
+        return first { (recording) -> Bool in
+            return recording.id == item.id
+        }
     }
 }
 
@@ -77,5 +92,9 @@ final class MockRecordingsListViewModel: RecordingsListViewModelType {
     
     func reload() {
         items.accept(items.value)
+    }
+    
+    func createRecordingViewModel(for item: RecordingItemViewModel) -> PlayRecordingViewModelType {
+        fatalError()
     }
 }

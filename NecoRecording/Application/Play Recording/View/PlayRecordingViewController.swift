@@ -9,10 +9,23 @@
 import UIKit
 
 final class PlayRecordingViewController: BaseViewController {
+    
+    // MARK: - Attributes -
+    private let viewModel: PlayRecordingViewModelType
 
     // MARK: - Life Cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    // MARK: - Init -
+    init(viewModel: PlayRecordingViewModelType) {
+        self.viewModel = viewModel
+        super.init()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError()
     }
     
 }

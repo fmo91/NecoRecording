@@ -102,7 +102,9 @@ extension RecordingsListViewController: UITableViewDelegate, UITableViewDataSour
             let destinationViewController = CreateRecordingViewController()
             navigationController?.pushViewController(destinationViewController, animated: true)
         case .recordings:
-            let destinationViewController = PlayRecordingViewController()
+            let item = viewModel.items.value[indexPath.row]
+            let destinationViewModel = viewModel.createRecordingViewModel(for: item)
+            let destinationViewController = PlayRecordingViewController(viewModel: destinationViewModel)
             navigationController?.pushViewController(destinationViewController, animated: true)
         }
     }
