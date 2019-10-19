@@ -19,6 +19,12 @@
 		04C3B254235B7E1200E68D3F /* RecordingsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C3B252235B7E1200E68D3F /* RecordingsListTableViewCell.xib */; };
 		04F55B2B235B8E0000FEA57F /* CreateRecordingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F55B29235B8E0000FEA57F /* CreateRecordingTableViewCell.swift */; };
 		04F55B2C235B8E0000FEA57F /* CreateRecordingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F55B2A235B8E0000FEA57F /* CreateRecordingTableViewCell.xib */; };
+		04F55B32235B9CC000FEA57F /* CreateRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F55B30235B9CC000FEA57F /* CreateRecordingViewController.swift */; };
+		04F55B33235B9CC000FEA57F /* CreateRecordingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F55B31235B9CC000FEA57F /* CreateRecordingViewController.xib */; };
+		04F55B35235B9CD600FEA57F /* CreateRecordingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F55B34235B9CD600FEA57F /* CreateRecordingViewControllerTests.swift */; };
+		04F55B3B235B9D7200FEA57F /* PlayRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F55B39235B9D7200FEA57F /* PlayRecordingViewController.swift */; };
+		04F55B3C235B9D7200FEA57F /* PlayRecordingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F55B3A235B9D7200FEA57F /* PlayRecordingViewController.xib */; };
+		04F55B3E235B9D8400FEA57F /* PlayRecordingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F55B3D235B9D8400FEA57F /* PlayRecordingViewControllerTests.swift */; };
 		352773FC0BE48D6B0C94997B /* Pods_NecoRecordingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FCB8B52F3BF7D133FB337D /* Pods_NecoRecordingTests.framework */; };
 		3B262A445E6AD494A42FB11F /* Pods_NecoRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A8D1D6480691CCA72609C /* Pods_NecoRecording.framework */; };
 		CB0BB915235532C900257786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB914235532C900257786 /* AppDelegate.swift */; };
@@ -74,6 +80,12 @@
 		04C3B252235B7E1200E68D3F /* RecordingsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordingsListTableViewCell.xib; sourceTree = "<group>"; };
 		04F55B29235B8E0000FEA57F /* CreateRecordingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecordingTableViewCell.swift; sourceTree = "<group>"; };
 		04F55B2A235B8E0000FEA57F /* CreateRecordingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateRecordingTableViewCell.xib; sourceTree = "<group>"; };
+		04F55B30235B9CC000FEA57F /* CreateRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecordingViewController.swift; sourceTree = "<group>"; };
+		04F55B31235B9CC000FEA57F /* CreateRecordingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateRecordingViewController.xib; sourceTree = "<group>"; };
+		04F55B34235B9CD600FEA57F /* CreateRecordingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecordingViewControllerTests.swift; sourceTree = "<group>"; };
+		04F55B39235B9D7200FEA57F /* PlayRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayRecordingViewController.swift; sourceTree = "<group>"; };
+		04F55B3A235B9D7200FEA57F /* PlayRecordingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayRecordingViewController.xib; sourceTree = "<group>"; };
+		04F55B3D235B9D8400FEA57F /* PlayRecordingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayRecordingViewControllerTests.swift; sourceTree = "<group>"; };
 		0627943F04C47C3514033E21 /* Pods_NecoRecording_NecoRecordingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NecoRecording_NecoRecordingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0871DB88B71A2F2FDEF7F622 /* Pods-NecoRecording.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NecoRecording.release.xcconfig"; path = "Target Support Files/Pods-NecoRecording/Pods-NecoRecording.release.xcconfig"; sourceTree = "<group>"; };
 		2B1A8D1D6480691CCA72609C /* Pods_NecoRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NecoRecording.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +179,49 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		04F55B2E235B9CA800FEA57F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04F55B30235B9CC000FEA57F /* CreateRecordingViewController.swift */,
+				04F55B31235B9CC000FEA57F /* CreateRecordingViewController.xib */,
+				04F55B34235B9CD600FEA57F /* CreateRecordingViewControllerTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04F55B2F235B9CAE00FEA57F /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		04F55B36235B9D4200FEA57F /* Play Recording */ = {
+			isa = PBXGroup;
+			children = (
+				04F55B37235B9D5E00FEA57F /* View */,
+				04F55B38235B9D6100FEA57F /* View Model */,
+			);
+			path = "Play Recording";
+			sourceTree = "<group>";
+		};
+		04F55B37235B9D5E00FEA57F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04F55B39235B9D7200FEA57F /* PlayRecordingViewController.swift */,
+				04F55B3A235B9D7200FEA57F /* PlayRecordingViewController.xib */,
+				04F55B3D235B9D8400FEA57F /* PlayRecordingViewControllerTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04F55B38235B9D6100FEA57F /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		2AA647D476CE2B08351A5FDC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +305,7 @@
 				CB43D60323555DF300107DB8 /* Initial */,
 				CB43D5F523555CAE00107DB8 /* RecordingsList */,
 				CB43D5F623555CB600107DB8 /* Create Recording */,
+				04F55B36235B9D4200FEA57F /* Play Recording */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -298,6 +354,8 @@
 		CB43D5F623555CB600107DB8 /* Create Recording */ = {
 			isa = PBXGroup;
 			children = (
+				04F55B2E235B9CA800FEA57F /* View */,
+				04F55B2F235B9CAE00FEA57F /* View Model */,
 			);
 			path = "Create Recording";
 			sourceTree = "<group>";
@@ -457,8 +515,10 @@
 				CB43D5FA23555CD900107DB8 /* RecordingsListViewController.xib in Resources */,
 				CB0BB921235532CC00257786 /* Assets.xcassets in Resources */,
 				CB43D60723555E0600107DB8 /* InitialViewController.xib in Resources */,
+				04F55B3C235B9D7200FEA57F /* PlayRecordingViewController.xib in Resources */,
 				0464A9C9235ABD04007821A0 /* Localizable.strings in Resources */,
 				04C3B254235B7E1200E68D3F /* RecordingsListTableViewCell.xib in Resources */,
+				04F55B33235B9CC000FEA57F /* CreateRecordingViewController.xib in Resources */,
 				04F55B2C235B8E0000FEA57F /* CreateRecordingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,9 +679,11 @@
 				0464A9C6235ABC00007821A0 /* Strings.swift in Sources */,
 				CB65B2FB2356C06C00D7FE19 /* RecordingsRepository.swift in Sources */,
 				CB0BB915235532C900257786 /* AppDelegate.swift in Sources */,
+				04F55B3B235B9D7200FEA57F /* PlayRecordingViewController.swift in Sources */,
 				04F55B2B235B8E0000FEA57F /* CreateRecordingTableViewCell.swift in Sources */,
 				CB43D5FC23555CE800107DB8 /* RecordingsListViewModel.swift in Sources */,
 				CB0BB917235532C900257786 /* SceneDelegate.swift in Sources */,
+				04F55B32235B9CC000FEA57F /* CreateRecordingViewController.swift in Sources */,
 				04C3B253235B7E1200E68D3F /* RecordingsListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,6 +694,8 @@
 			files = (
 				CB43D5FE23555CFE00107DB8 /* RecordingsListViewModelTests.swift in Sources */,
 				CB43D60023555D0900107DB8 /* RecordingsListViewControllerTests.swift in Sources */,
+				04F55B3E235B9D8400FEA57F /* PlayRecordingViewControllerTests.swift in Sources */,
+				04F55B35235B9CD600FEA57F /* CreateRecordingViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

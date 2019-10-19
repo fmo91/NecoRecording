@@ -96,6 +96,17 @@ extension RecordingsListViewController: UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch Section(rawValue: indexPath.section)! {
+        case .createRecording:
+            let destinationViewController = CreateRecordingViewController()
+            navigationController?.pushViewController(destinationViewController, animated: true)
+        case .recordings:
+            let destinationViewController = PlayRecordingViewController()
+            navigationController?.pushViewController(destinationViewController, animated: true)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch Section(rawValue: indexPath.section)! {
         case .createRecording: return CreateRecordingTableViewCell.height
