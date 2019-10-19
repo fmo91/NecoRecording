@@ -1,6 +1,6 @@
 language: objective-c
 os: osx
 osx_image: xcode11.2	
-xcode_project: NecoRecording.xcodeproj # path to your xcodeproj folder
+xcode_workspace: NecoRecording.xcworkspace # path to your xcodeproj folder
 xcode_scheme: NecoRecording
 xcode_destination: platform=iOS Simulator,OS=13.2,name=iPhone 8
