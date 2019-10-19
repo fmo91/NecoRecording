@@ -34,6 +34,7 @@ final class RecordingsListViewModelTests: XCTestCase {
     func testStateContentsOnError() {
         let repository = MockRecordingsRepository()
         let viewModel = RecordingsListViewModel(repository: repository)
+        viewModel.reload()
         let expectation = XCTestExpectation()
         viewModel.errorMessage.asObservable().subscribe(onNext: { (message: String) in
             XCTAssert(!message.isEmpty)
@@ -48,6 +49,7 @@ final class RecordingsListViewModelTests: XCTestCase {
             Recording(id: 1, name: "First Recording", duration: 6000, content: nil, attachments: nil)
         ]
         let viewModel = RecordingsListViewModel(repository: repository)
+        viewModel.reload()
         let expectation = XCTestExpectation()
         viewModel.items.asObservable().subscribe(onNext: { (items: [RecordingItemViewModel]) in
             XCTAssertEqual(items.count, 1)

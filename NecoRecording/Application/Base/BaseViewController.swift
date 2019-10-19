@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import RxSwift
 
 open class BaseViewController: UIViewController {
+    
+    // MARK: - Attributes -
+    let disposeBag = DisposeBag()
 
     // MARK: - Life Cycle -
     override open func viewDidLoad() {

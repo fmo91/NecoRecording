@@ -11,6 +11,7 @@ import Foundation
 struct RecordingItemViewModel {
     let title: String
     let subtitle: String
+    let identifier = UUID()
     
     init(recording: Recording) {
         self.title = recording.name
@@ -20,5 +21,11 @@ struct RecordingItemViewModel {
     init(title: String, subtitle: String) {
         self.title = title
         self.subtitle = subtitle
+    }
+}
+
+extension RecordingItemViewModel: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
     }
 }
