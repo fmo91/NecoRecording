@@ -11,4 +11,14 @@ import Foundation
 struct RecordingItemViewModel {
     let title: String
     let subtitle: String
+    
+    init(recording: Recording) {
+        self.title = recording.name
+        self.subtitle = recording.duration.description
+    }
+    
+    init(title: String, subtitle: String) {
+        self.title = title
+        self.subtitle = subtitle
+    }
 }

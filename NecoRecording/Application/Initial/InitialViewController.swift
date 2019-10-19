@@ -15,8 +15,6 @@ final class InitialViewController: BaseViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        
-        
         transitionToHome()
     }
     

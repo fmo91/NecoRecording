@@ -8,29 +8,52 @@
 
 import XCTest
 @testable import NecoRecording
+import RxSwift
+import RxTest
 
 final class RecordingsListViewModelTests: XCTestCase {
-
-    private var sut: RecordingsListViewModel?
     
-    override func setUp() {
-        sut = RecordingsListViewModel()
-    }
+    var disposeBag = DisposeBag()
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testOnEmptyState() {
+        var repository = MockRecordingsRepository()
+        repository.getRecordingMockResponse = []
+        let viewModel = RecordingsListViewModel(repository: repository)
+        
+        let expectation = XCTestExpectation()
+        viewModel.items.asObservable()
+            .subscribe(onNext: { (items: [RecordingItemViewModel]) in
+                XCTAssert(items.isEmpty)
+                expectation.fulfill()
+            })
+            .disposed(by: disposeBag)
+        
+        wait(for: [expectation], timeout: 60)
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testStateContentsOnError() {
+        let repository = MockRecordingsRepository()
+        let viewModel = RecordingsListViewModel(repository: repository)
+        let expectation = XCTestExpectation()
+        viewModel.errorMessage.asObservable().subscribe(onNext: { (message: String) in
+            XCTAssert(!message.isEmpty)
+            expectation.fulfill()
+        }).disposed(by: disposeBag)
+        wait(for: [expectation], timeout: 60)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testOnNormalState() {
+        var repository = MockRecordingsRepository()
+        repository.getRecordingMockResponse = [
+            Recording(id: 1, name: "First Recording", duration: 6000, content: nil, attachments: nil)
+        ]
+        let viewModel = RecordingsListViewModel(repository: repository)
+        let expectation = XCTestExpectation()
+        viewModel.items.asObservable().subscribe(onNext: { (items: [RecordingItemViewModel]) in
+            XCTAssertEqual(items.count, 1)
+            expectation.fulfill()
+        }).disposed(by: disposeBag)
+        wait(for: [expectation], timeout: 60)
     }
 
 }
