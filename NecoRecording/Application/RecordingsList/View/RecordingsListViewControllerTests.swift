@@ -26,9 +26,40 @@ final class RecordingsListViewControllerTests: XCTestCase {
         _ = viewController.view
         viewModel.reload()
         
-        let numberOfRows = viewController.tableView.numberOfRows(inSection: 0)
+        let numberOfRows = viewController.tableView.numberOfRows(inSection: RecordingsListViewController.Section.recordings.rawValue)
         
         XCTAssertEqual(items.count, numberOfRows)
+    }
+    
+    func testTableViewFillsWithMultipleUpdates() {
+        let viewModel = MockRecordingsListViewModel()
+        let viewController = RecordingsListViewController(viewModel: viewModel)
+        
+        let items = [
+            RecordingItemViewModel(title: "First title", subtitle: "First subtitle"),
+            RecordingItemViewModel(title: "Second title", subtitle: "Second subtitle"),
+            RecordingItemViewModel(title: "Third title", subtitle: "Third subtitle"),
+        ]
+        
+        viewModel.items.accept(items)
+        
+        _ = viewController.view
+        viewModel.reload()
+        
+        let numberOfRows = viewController.tableView.numberOfRows(inSection: RecordingsListViewController.Section.recordings.rawValue)
+        
+        XCTAssertEqual(items.count, numberOfRows)
+        
+        
+        let itemsForUpdate = [
+            RecordingItemViewModel(title: "Fourth title", subtitle: "Fourth subtitle"),
+        ]
+        
+        viewModel.items.accept(itemsForUpdate)
+        
+        let numberOfRowsAfterUpdate = viewController.tableView.numberOfRows(inSection: RecordingsListViewController.Section.recordings.rawValue)
+        
+        XCTAssertEqual(itemsForUpdate.count, numberOfRowsAfterUpdate)
     }
 
 }

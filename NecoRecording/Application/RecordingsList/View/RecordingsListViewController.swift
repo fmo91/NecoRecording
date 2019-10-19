@@ -11,7 +11,8 @@ import UIKit
 final class RecordingsListViewController: BaseViewController {
     
     // MARK: - Inner Types -
-    enum Section: CaseIterable {
+    enum Section: Int, CaseIterable {
+        case createRecording = 0
         case recordings
     }
     
@@ -20,7 +21,7 @@ final class RecordingsListViewController: BaseViewController {
 
     // MARK: - Attributes -
     private let viewModel: RecordingsListViewModelType
-    private var dataSource: UITableViewDiffableDataSource<Section, RecordingItemViewModel>?
+    private var dataSource: UITableViewDiffableDataSource<Section, AnyHashable>?
     
     // MARK: - Life Cycle -
     override func viewDidLoad() {
@@ -47,27 +48,20 @@ final class RecordingsListViewController: BaseViewController {
     
     // MARK: - UI Configuration -
     private func configureTableView() {
+        tableView.register(UINib(nibName: CreateRecordingTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: CreateRecordingTableViewCell.identifier)
         tableView.register(UINib(nibName: RecordingsListTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: RecordingsListTableViewCell.identifier)
         
-        dataSource = UITableViewDiffableDataSource<Section, RecordingItemViewModel>(tableView: tableView) { (tableView: UITableView, indexPath: IndexPath, item: RecordingItemViewModel) -> UITableViewCell? in
-            let cell = tableView.dequeueReusableCell(withIdentifier: RecordingsListTableViewCell.identifier) as! RecordingsListTableViewCell
-            cell.configure(for: item)
-            return cell
-        }
-        
         tableView.delegate = self
+        tableView.dataSource = self
     }
     
     private func observeViewModel() {
         viewModel.items.asDriver()
-            .map { (items: [RecordingItemViewModel]) -> NSDiffableDataSourceSnapshot<Section, RecordingItemViewModel> in
-                var snapshot = NSDiffableDataSourceSnapshot<Section, RecordingItemViewModel>()
-                snapshot.appendSections([.recordings])
-                snapshot.appendItems(items)
-                return snapshot
-            }
-            .drive(onNext: { [weak self] (snapshot: NSDiffableDataSourceSnapshot<RecordingsListViewController.Section, RecordingItemViewModel>) in
-                self?.dataSource?.apply(snapshot, animatingDifferences: true, completion: nil)
+            .drive(onNext: { [weak self] (items: [RecordingItemViewModel]) in
+                guard let self = self else { return }
+                self.tableView.performBatchUpdates({
+                    self.tableView.reloadSections(IndexSet.init(integer: Section.recordings.rawValue), with: .automatic)
+                }, completion: nil)
             })
             .disposed(by: disposeBag)
     }
@@ -75,8 +69,37 @@ final class RecordingsListViewController: BaseViewController {
 }
 
 // MARK: - UITableViewDelegate -
-extension RecordingsListViewController: UITableViewDelegate {
+extension RecordingsListViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        Section.allCases.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch Section(rawValue: section)! {
+        case .createRecording:
+            return 1
+        case .recordings:
+            return viewModel.items.value.count
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch Section(rawValue: indexPath.section)! {
+        case .createRecording:
+            let cell = tableView.dequeueReusableCell(withIdentifier: CreateRecordingTableViewCell.identifier) as! CreateRecordingTableViewCell
+            return cell
+        case .recordings:
+            let cell = tableView.dequeueReusableCell(withIdentifier: RecordingsListTableViewCell.identifier) as! RecordingsListTableViewCell
+            let recording = viewModel.items.value[indexPath.row]
+            cell.configure(for: recording)
+            return cell
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return RecordingsListTableViewCell.height
+        switch Section(rawValue: indexPath.section)! {
+        case .createRecording: return CreateRecordingTableViewCell.height
+        case .recordings: return RecordingsListTableViewCell.height
+        }
     }
 }

@@ -17,6 +17,8 @@
 		04C3B24D235B4A9D00E68D3F /* NecoRecordingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3B24C235B4A9D00E68D3F /* NecoRecordingUITests.swift */; };
 		04C3B253235B7E1200E68D3F /* RecordingsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3B251235B7E1200E68D3F /* RecordingsListTableViewCell.swift */; };
 		04C3B254235B7E1200E68D3F /* RecordingsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C3B252235B7E1200E68D3F /* RecordingsListTableViewCell.xib */; };
+		04F55B2B235B8E0000FEA57F /* CreateRecordingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F55B29235B8E0000FEA57F /* CreateRecordingTableViewCell.swift */; };
+		04F55B2C235B8E0000FEA57F /* CreateRecordingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F55B2A235B8E0000FEA57F /* CreateRecordingTableViewCell.xib */; };
 		352773FC0BE48D6B0C94997B /* Pods_NecoRecordingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FCB8B52F3BF7D133FB337D /* Pods_NecoRecordingTests.framework */; };
 		3B262A445E6AD494A42FB11F /* Pods_NecoRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A8D1D6480691CCA72609C /* Pods_NecoRecording.framework */; };
 		CB0BB915235532C900257786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB914235532C900257786 /* AppDelegate.swift */; };
@@ -70,6 +72,8 @@
 		04C3B24C235B4A9D00E68D3F /* NecoRecordingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NecoRecordingUITests.swift; sourceTree = "<group>"; };
 		04C3B251235B7E1200E68D3F /* RecordingsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsListTableViewCell.swift; sourceTree = "<group>"; };
 		04C3B252235B7E1200E68D3F /* RecordingsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordingsListTableViewCell.xib; sourceTree = "<group>"; };
+		04F55B29235B8E0000FEA57F /* CreateRecordingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecordingTableViewCell.swift; sourceTree = "<group>"; };
+		04F55B2A235B8E0000FEA57F /* CreateRecordingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateRecordingTableViewCell.xib; sourceTree = "<group>"; };
 		0627943F04C47C3514033E21 /* Pods_NecoRecording_NecoRecordingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NecoRecording_NecoRecordingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0871DB88B71A2F2FDEF7F622 /* Pods-NecoRecording.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NecoRecording.release.xcconfig"; path = "Target Support Files/Pods-NecoRecording/Pods-NecoRecording.release.xcconfig"; sourceTree = "<group>"; };
 		2B1A8D1D6480691CCA72609C /* Pods_NecoRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NecoRecording.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +161,8 @@
 			children = (
 				04C3B251235B7E1200E68D3F /* RecordingsListTableViewCell.swift */,
 				04C3B252235B7E1200E68D3F /* RecordingsListTableViewCell.xib */,
+				04F55B29235B8E0000FEA57F /* CreateRecordingTableViewCell.swift */,
+				04F55B2A235B8E0000FEA57F /* CreateRecordingTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -453,6 +459,7 @@
 				CB43D60723555E0600107DB8 /* InitialViewController.xib in Resources */,
 				0464A9C9235ABD04007821A0 /* Localizable.strings in Resources */,
 				04C3B254235B7E1200E68D3F /* RecordingsListTableViewCell.xib in Resources */,
+				04F55B2C235B8E0000FEA57F /* CreateRecordingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +619,7 @@
 				0464A9C6235ABC00007821A0 /* Strings.swift in Sources */,
 				CB65B2FB2356C06C00D7FE19 /* RecordingsRepository.swift in Sources */,
 				CB0BB915235532C900257786 /* AppDelegate.swift in Sources */,
+				04F55B2B235B8E0000FEA57F /* CreateRecordingTableViewCell.swift in Sources */,
 				CB43D5FC23555CE800107DB8 /* RecordingsListViewModel.swift in Sources */,
 				CB0BB917235532C900257786 /* SceneDelegate.swift in Sources */,
 				04C3B253235B7E1200E68D3F /* RecordingsListTableViewCell.swift in Sources */,
