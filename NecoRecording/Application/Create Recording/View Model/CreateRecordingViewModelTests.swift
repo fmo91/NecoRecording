@@ -7,7 +7,17 @@
 //
 
 import XCTest
+@testable import NecoRecording
 
 final class CreateRecordingViewModelTests: XCTestCase {
-
+    func testRecordingStateOnEvents() {
+        let repository = MockRecordingsRepository()
+        let viewModel = CreateRecordingViewModel(repository: repository)
+     
+        XCTAssertFalse(viewModel.isRecording.value)
+        viewModel.startRecording()
+        XCTAssertTrue(viewModel.isRecording.value)
+        viewModel.finishRecording()
+        XCTAssertFalse(viewModel.isRecording.value)
+    }
 }

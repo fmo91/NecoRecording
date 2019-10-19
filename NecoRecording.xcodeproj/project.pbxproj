@@ -29,6 +29,8 @@
 		04F55B42235BA09A00FEA57F /* CreateRecordingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F55B41235BA09A00FEA57F /* CreateRecordingViewModelTests.swift */; };
 		04F55B44235BA45D00FEA57F /* PlayRecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F55B43235BA45D00FEA57F /* PlayRecordingViewModel.swift */; };
 		04F55B46235BA46A00FEA57F /* PlayRecordingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F55B45235BA46A00FEA57F /* PlayRecordingViewModelTests.swift */; };
+		04F55B48235BC0EC00FEA57F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F55B47235BC0EC00FEA57F /* Colors.xcassets */; };
+		04F55B4A235BCA8400FEA57F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F55B49235BCA8400FEA57F /* Colors.swift */; };
 		352773FC0BE48D6B0C94997B /* Pods_NecoRecordingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FCB8B52F3BF7D133FB337D /* Pods_NecoRecordingTests.framework */; };
 		3B262A445E6AD494A42FB11F /* Pods_NecoRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A8D1D6480691CCA72609C /* Pods_NecoRecording.framework */; };
 		CB0BB915235532C900257786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB914235532C900257786 /* AppDelegate.swift */; };
@@ -94,6 +96,8 @@
 		04F55B41235BA09A00FEA57F /* CreateRecordingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecordingViewModelTests.swift; sourceTree = "<group>"; };
 		04F55B43235BA45D00FEA57F /* PlayRecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayRecordingViewModel.swift; sourceTree = "<group>"; };
 		04F55B45235BA46A00FEA57F /* PlayRecordingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayRecordingViewModelTests.swift; sourceTree = "<group>"; };
+		04F55B47235BC0EC00FEA57F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		04F55B49235BCA8400FEA57F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0627943F04C47C3514033E21 /* Pods_NecoRecording_NecoRecordingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NecoRecording_NecoRecordingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0871DB88B71A2F2FDEF7F622 /* Pods-NecoRecording.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NecoRecording.release.xcconfig"; path = "Target Support Files/Pods-NecoRecording/Pods-NecoRecording.release.xcconfig"; sourceTree = "<group>"; };
 		2B1A8D1D6480691CCA72609C /* Pods_NecoRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NecoRecording.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -344,11 +348,13 @@
 			isa = PBXGroup;
 			children = (
 				CB0BB920235532CC00257786 /* Assets.xcassets */,
+				04F55B47235BC0EC00FEA57F /* Colors.xcassets */,
 				CB0BB925235532CC00257786 /* Info.plist */,
 				CB0BB91D235532C900257786 /* NecoRecording.xcdatamodeld */,
 				CB0BB916235532C900257786 /* SceneDelegate.swift */,
 				CB0BB922235532CC00257786 /* LaunchScreen.storyboard */,
 				0464A9C5235ABC00007821A0 /* Strings.swift */,
+				04F55B49235BCA8400FEA57F /* Colors.swift */,
 				0464A9CB235ABD04007821A0 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -528,6 +534,7 @@
 				CB0BB921235532CC00257786 /* Assets.xcassets in Resources */,
 				CB43D60723555E0600107DB8 /* InitialViewController.xib in Resources */,
 				04F55B3C235B9D7200FEA57F /* PlayRecordingViewController.xib in Resources */,
+				04F55B48235BC0EC00FEA57F /* Colors.xcassets in Resources */,
 				0464A9C9235ABD04007821A0 /* Localizable.strings in Resources */,
 				04C3B254235B7E1200E68D3F /* RecordingsListTableViewCell.xib in Resources */,
 				04F55B33235B9CC000FEA57F /* CreateRecordingViewController.xib in Resources */,
@@ -677,6 +684,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB43D5F923555CD900107DB8 /* RecordingsListViewController.swift in Sources */,
+				04F55B4A235BCA8400FEA57F /* Colors.swift in Sources */,
 				CBB803FB2356B6EE0065A481 /* RecordingItemViewModel.swift in Sources */,
 				04F55B44235BA45D00FEA57F /* PlayRecordingViewModel.swift in Sources */,
 				CB43D60A2355600700107DB8 /* NavigationHelper.swift in Sources */,

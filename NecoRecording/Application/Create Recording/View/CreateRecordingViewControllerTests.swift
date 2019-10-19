@@ -7,7 +7,16 @@
 //
 
 import XCTest
+@testable import NecoRecording
 
 final class CreateRecordingViewControllerTests: XCTestCase {
-
+    func testViewControllerConfigurationOnButtonPress() {
+        let viewModel = MockCreateRecordingViewModel()
+        let viewController = CreateRecordingViewController(viewModel: viewModel)
+        viewController.actionButtonPressed()
+        XCTAssertEqual(viewModel.numberOfCallsToStartRecording, 1)
+        viewModel.isRecording.accept(true)
+        viewController.actionButtonPressed()
+        XCTAssertEqual(viewModel.numberOfCallsToFinishRecording, 1)
+    }
 }

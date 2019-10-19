@@ -8,3 +8,6 @@
 
 // GENERAL
 "defaultError" = "Oops... Something wrong happened.";
+
+"recordButtonRecordingTitle" = "Finish";
+"recordButtonNonRecordingTitle" = "Record";

@@ -11,6 +11,8 @@ import Foundation
 extension String {
     enum Constant: String {
         case defaultError
+        case recordButtonRecordingTitle
+        case recordButtonNonRecordingTitle
         
         var value: String {
             NSLocalizedString(self.rawValue, comment: "")
